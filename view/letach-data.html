@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100 text-bg-dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Hugo 0.108.0" />
+    <title>Cover Template · Bootstrap v5.3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/cover/"
+    />
+
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+      * {
+        font-family: "Inter", sans-serif;
+      }
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      @media (max-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, 0.1);
+        border: solid rgba(0, 0, 0, 0.15);
+        border-width: 1px 0;
+        box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+          inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -0.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .card-cover {
+        padding-top: 56.25%; /* Maintain a 16:9 aspect ratio */
+        position: relative; /* Position the image inside the card */
+        overflow: hidden; /* Hide any overflow from the image */
+      }
+      .card-cover img {
+        position: absolute; /* Position the image within the card */
+        top: 0; /* Align the image to the top */
+        left: 0; /* Align the image to the left */
+        width: 100%; /* Ensure the image fills the width of the card */
+        height: 100%; /* Ensure the image fills the height of the card */
+        object-fit: contain; /* Maintain aspect ratio while covering the entire card */
+      }
+      .feature {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 4rem;
+        width: 4rem;
+        font-size: 2rem;
+      }
+      .mt-n4 {
+        margin-top: -1.5rem !important;
+      }
+      .bg-primary {
+        --bs-bg-opacity: 1;
+        background-color: rgba(
+          var(--bs-success-rgb),
+          var(--bs-bg-opacity)
+        ) !important;
+      }
+      .feature h2 {
+        color: black !important;
+      }
+      .transaction {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 15px;
+      }
+      .transaction-header {
+        font-size: 18px;
+        font-weight: bold;
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+      .transaction-body {
+        font-size: 16px;
+        color: #333;
+      }
+      .transaction-details {
+        margin-top: 10px;
+        font-size: 16px;
+      }
+      @media (max-width: 576px) {
+        .transaction-header {
+          font-size: 20px;
+          letter-spacing: -1px;
+        }
+        .transaction-body {
+          font-size: 14px;
+        }
+
+        .transaction-details strong {
+          font-size: 18px;
+        }
+        .loca {
+          font-size: 16px;
+        }
+      }
+      /* .navbar-collapse {
+        flex-grow: 1;
+        align-items: center;
+        display: flex !important;
+
+        flex-basis: auto;
+      } */
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="../cover.css" rel="stylesheet" />
+    <link href="notification.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex text-center text-bg-dark">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-2">
+        <div>
+          <a href="home.html" class="text-success">
+            <h2 class="float-start mt-2 toosmall">Vengo+</h2>
+          </a>
+          <nav class="nav nav-masthead justify-content-center float-end">
+            <a class="nav-link fw-bold px-2"><i class="bi bi-gear"></i> </a>
+            <a
+              class="nav-link fw-bold px-3"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              ><i class="bi bi-menu-button-wide-fill"></i>
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto w-100">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#!"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#!">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <!-- this is user  -->
+
+            <!-- here is mail 
+            <a type="button" class="btn btn-primary position-relative">
+              Mails
+
+              <span
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill text-bg-secondary"
+                >+99
+                <span class="visually-hidden">unread messages</span>
+              </span>
+            </a> -->
+          </nav>
+        </div>
+      </header>
+
+      <main class="px-3 mt-4">
+        <h1
+          class=""
+          style="
+            text-align: left;
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: -1px;
+          "
+        >
+          Reported Transactions
+        </h1>
+        <!-- Search form -->
+        <div class="row justify-content-center search-container pt-2">
+          <div class="col-12">
+            <form class="form-inline">
+              <div class="input-group w-100">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="Search transactions..."
+                  aria-label="Search transactions"
+                />
+                <div class="input-group-append">
+                  <button class="btn btn-primary btn-lg" type="button">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- End of Search form -->
+        <hr />
+        <br />
+        <div class="container mb-5">
+          <!-- Page Features-->
+          <div class="row" style="text-align: left !important">
+            <div class="col-md-12">
+              <div class="transaction">
+                <div class="transaction-header">
+                  Reported by: 16425 (nelson.chua)
+                </div>
+                <div class="transaction-body transaction-details">
+                  <div class="loca">
+                    EZLINK (Mall) - Waterway Point, 83 Punggol Central Level B1
+                    The Broadwalk S828761
+                  </div>
+                  <div class="transaction-details">
+                    <strong>Remarks:</strong> Transaction date: 3/6/2024 3:06:14
+                    PM & 3/6/2024 3:05:29 PM Product: Tom and Jerry Fun Art
+                    SimplyGo EZ-Link Card x 3pcs <br /><strong
+                      >Payment Amount: </strong
+                    >$15 <br />
+                    <strong>Diagnosis:</strong> To refund amount to customer, To
+                    send Technical Support (Technician) <br />
+                    <strong>Created by:</strong> damon.woo on 3/6/2024 3:48:13
+                    PM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="transaction">
+                <div class="transaction-header">Reported by: 6587829999</div>
+                <div class="transaction-body">
+                  <div class="loca">
+                    EZLINK (Mall) - Waterway Point, 83 Punggol Central Level B1
+                    The Broadwalk S828761
+                  </div>
+                  <div class="transaction-details">
+                    <strong>Remarks:</strong> Transaction date: 3/6/2024 3:06:14
+                    PM & 3/6/2024 3:05:29 PM Product: Tom and Jerry Fun Art
+                    SimplyGo EZ-Link Card x 3pcs<br /><strong
+                      >Payment Amount: </strong
+                    >$15
+                  </div>
+                  <div>
+                    <strong>Diagnosis:</strong> To refund amount to customer, To
+                    send Technical Support (Technician)
+                  </div>
+                  <div>
+                    <strong>Created by:</strong> damon.woo on 3/6/2024 3:48:13
+                    PM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="transaction">
+                <div class="transaction-header">Reported by: +60167132256</div>
+                <div class="transaction-body">
+                  <div class="loca">
+                    EZLINK (Mall) - Waterway Point, 83 Punggol Central Level B1
+                    The Broadwalk S828761
+                  </div>
+                  <div class="transaction-details">
+                    <strong>Remarks:</strong> Transaction date: 3/6/2024 3:06:14
+                    PM & 3/6/2024 3:05:29 PM Product: Tom and Jerry Fun Art
+                    SimplyGo EZ-Link Card x 3pcs <br /><strong
+                      >Payment Amount: </strong
+                    >$15
+                  </div>
+                  <div>
+                    <strong>Diagnosis:</strong> To refund amount to customer, To
+                    send Technical Support (Technician)
+                  </div>
+                  <div>
+                    <strong>Created by:</strong> damon.woo on 3/6/2024 3:48:13
+                    PM
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="transaction">
+                <div class="transaction-header">
+                  Reported by: 16425 (nelson.chua)
+                </div>
+                <div class="transaction-body">
+                  <div class="loca">
+                    EZLINK (Mall) - Waterway Point, 83 Punggol Central Level B1
+                    The Broadwalk S828761
+                  </div>
+                  <div class="transaction-details">
+                    <strong>Remarks:</strong> Transaction date: 3/6/2024 3:06:14
+                    PM & 3/6/2024 3:05:29 PM Product: Tom and Jerry Fun Art
+                    SimplyGo EZ-Link Card x 3pcs <br /><strong
+                      >Payment Amount: </strong
+                    >$15
+                  </div>
+                  <div>
+                    <strong>Diagnosis:</strong> To refund amount to customer, To
+                    send Technical Support (Technician)
+                  </div>
+                  <div>
+                    <strong>Created by:</strong> damon.woo on 3/6/2024 3:48:13
+                    PM
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="mt-auto text-white-50">
+        <p class="mb-0" style="font-size: 16px">
+          © 2024 Le Tach Vending Pte Ltd. All rights reserved. | 34 Boon Leat
+          Terrace, #B1-01, Singapore 119866 |<a
+            href="tel:+6591904399"
+            class="text-white"
+            >+65 9190 4399</a
+          >
+          |
+          <a href="https://getbootstrap.com/" class="text-white"
+            >Privacy Policy</a
+          >|
+          <a href="https://getbootstrap.com/" class="text-white"
+            >Term Of Service</a
+          >
+        </p>
+      </footer>
+    </div>
+    <script src="../dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      function unlink(itemToHideId) {
+        console.log(itemToHideId);
+
+        var itemToHide = document.getElementById(itemToHideId);
+
+        itemToHide.style.display = "none";
+      }
+
+      function unlink01(button) {
+        var listItem = button.closest("li");
+        var itemId = listItem.id; // Get the ID of the parent li
+        console.log(itemId); // Now you'll see the ID in the console
+
+        listItem.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
